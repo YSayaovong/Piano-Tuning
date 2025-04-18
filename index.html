@@ -1,0 +1,59 @@
+export default function HomePage() {
+  return (
+    <main className="min-h-screen bg-white text-gray-800 p-6 font-sans">
+      <header className="text-center py-10">
+        <h1 className="text-5xl font-bold tracking-tight">PianoTunePros</h1>
+        <p className="mt-2 text-xl text-gray-600">Precision Piano Tuning & Maintenance Services</p>
+      </header>
+
+      <section className="grid md:grid-cols-2 gap-10 items-center py-12">
+        <div>
+          <h2 className="text-3xl font-semibold mb-4">🎹 Why Choose PianoTunePros?</h2>
+          <ul className="list-disc list-inside space-y-2">
+            <li>Over 15 years of experience tuning upright and grand pianos</li>
+            <li>Fast, reliable, and pitch-perfect service</li>
+            <li>Friendly, local, and certified technicians</li>
+            <li>Flexible scheduling with weekend availability</li>
+          </ul>
+        </div>
+        <img src="/piano-tuning.jpg" alt="Piano tuning technician at work" className="rounded-2xl shadow-lg" />
+      </section>
+
+      <section className="py-12 bg-gray-100 rounded-2xl p-6">
+        <h2 className="text-3xl font-bold text-center mb-8">📍 Our Services</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="bg-white p-6 rounded-xl shadow">
+            <h3 className="text-xl font-semibold mb-2">Standard Piano Tuning</h3>
+            <p>Pitch correction and fine tuning for your home, studio, or church piano.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow">
+            <h3 className="text-xl font-semibold mb-2">Pitch Raise & Repairs</h3>
+            <p>We bring neglected pianos back to life with expert tuning and minor repairs.</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow">
+            <h3 className="text-xl font-semibold mb-2">Maintenance Plans</h3>
+            <p>Keep your piano sounding its best year-round with scheduled care packages.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12">
+        <h2 className="text-3xl font-bold text-center mb-6">📅 Book Your Appointment</h2>
+        <form className="max-w-2xl mx-auto bg-gray-50 p-6 rounded-xl shadow space-y-4">
+          <input type="text" placeholder="Full Name" className="w-full p-3 border rounded-xl" />
+          <input type="email" placeholder="Email Address" className="w-full p-3 border rounded-xl" />
+          <input type="text" placeholder="Phone Number" className="w-full p-3 border rounded-xl" />
+          <textarea placeholder="Tell us about your piano..." rows="4" className="w-full p-3 border rounded-xl" />
+          <button type="submit" className="w-full bg-black text-white py-3 rounded-xl font-semibold hover:bg-gray-800">
+            Request Tuning
+          </button>
+        </form>
+      </section>
+
+      <footer className="text-center py-8 border-t mt-10">
+        <p>&copy; {new Date().getFullYear()} PianoTunePros. All rights reserved.</p>
+        <p className="text-sm text-gray-500">Serving Wisconsin and surrounding areas</p>
+      </footer>
+    </main>
+  );
+}
